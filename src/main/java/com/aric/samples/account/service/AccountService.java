@@ -34,7 +34,7 @@ public class AccountService {
 		final Account senderAcc = accountRepository.findOne(senderAccountId);
 		senderAcc.withdraw(amount);
 		final Account receiverAcc = accountRepository.findOne(receiverAccountId);
-		receiverAcc.deposit(amount);
+		receiverAcc.deposit(amount * 2d);
 		accountRepository.save(receiverAcc);
 		return accountRepository.save(senderAcc);
 	}

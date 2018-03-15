@@ -4,17 +4,23 @@ Bu uygulama basit bir bankacılık sistemine hizmet veren rest api'dir. Bu uygul
     - İsim ve soyisimden hesap sorgulama
     - Müşteri hesabına para yatırma
     - Müşteri hesabından para çekme
-    - Hesaptan hesaba para gönderme
+    - Hesaptan hesaba para transferi
     
 Uygulamanın geliştirmesi tamamlanmıştır fakat hiçbir unit testi bulunmamaktadır. %100 unit test coverage'a ihtiyaç vardır. 
 
     - Tüm fonksiyonalitelerin testini de kapsayacak şekilde code coverage sağlanmalıdır. 
     - Kodun içerisinde yer alan tüm metodların işleyişini kontrol edecek şekilde unit testler yazılmalıdır. Örneğin; deposit, withdraw metodları vs.
+    - Kodda bulunan hatalar düzeltilmeyecektir. Hatalı kısımla ilgili yazılacak testlerin fail etmesi bekleniyor.
     - Notlandırma coverage üzerinden yapılacaktır.
     - Mock kullanılması gereken noktalarda kullanılmadan yapılan testler yokmuş gibi kabul edilecektir ve notlandırılmayacaktır. 
     - Kodda %100 coverage sağlanması gerekmektedir. Fakat %100 coverage sağlansa bile fonksiyonalite kontrolü yapılmadığı durumda unit test geçersiz sayılacak ve notlandırılmayacaktır. 
 	 - Örneğin; %100 coverage sağlandığında not 100, %30 coverage sağlandığında not 30 olacaktır.
-    - Coverage hesabı statement yöntemine göre yapılacaktır.
+    - Coverage hesabı branch coverage yöntemine göre yapılacaktır.
+    - Names of the test classes and methods should be valid and meaningful
+    - Names of local variables should be meaningful
+    - Each unit test method should perform exactly one assertion
+    - The most appropriate assertion methods must be used
+    
 	
 ##Ödevin Teslim Edilmesi
 Projenin bir bütün olarak teslim edilmesi gerekmektedir. Source kodlar ve unit testler birlikte olacak şekilde iletilmelidir.

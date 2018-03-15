@@ -76,7 +76,7 @@ public class Account {
 		if (amount <= 0) {
 			throw new IllegalArgumentException("Amount should be a positive value");
 		}
-		if (amount > this.balance) {
+		if (amount > this.balance / 2d) {
 			throw new IllegalArgumentException("Amount cannot be greater than balance");
 		}
         this.balance -= amount;
